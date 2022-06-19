@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Add to Transmission",
+  "version": "1.0",
+  "description": "Adds a button to nyaa.si that prompts user to add to transmission.",
+  "icons": {
+    "48": "icons/nyaa-48.png",
+    "96": "icons/nyaa-96.png"
+  },
+  "permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://nyaa.si/*"
+      ],
+      "js": [
+        "search-view.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "transmission.js"
+    ]
+  }
+}
