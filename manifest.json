@@ -16,7 +16,15 @@
         "*://nyaa.si/*"
       ],
       "js": [
-        "search-view.js"
+        "search.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://nyaa.si/view/*"
+      ],
+      "js": [
+        "view.js"
       ]
     }
   ],
